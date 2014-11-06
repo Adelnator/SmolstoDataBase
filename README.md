@@ -8,6 +8,7 @@ We want to create project for company "SmolstO" for systematically work with cli
 
 * (C) Clients
   * (C) Client
+    * (V) Client ID
     * (V) First name
     * (V) Last name
     * (C) Cars
