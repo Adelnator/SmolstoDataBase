@@ -25,6 +25,7 @@ We want to create project for company "SmolstO" for systematically work with cli
   * (M) Edit client
   * (M) Delete client
   * (M) Find client
+In future
 * (C) Works
   ...
 * (C) Employees
