@@ -1,6 +1,6 @@
 SmolstoDataBase
 ===============
-We want to create project for company "SmolstO" for systematically work with clients
+We would like to create project for company "SmolstO" for systematically work with clients
 ===============
 (C) Class
 (V) variable
