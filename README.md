@@ -20,11 +20,11 @@ We want to create project for company "SmolstO" for systematically work with cli
     - (V) Vector of jobs numbers
     - (V) Phone number
     - (V) E-mail
-  | (M) show client list
-  | (M) add client
-  | (M) edit client
-  | (M) delete client
-  | (M) find client
+  * (M) Show client list
+  * (M) Add client
+  * (M) Edit client
+  * (M) Delete client
+  * (M) Find client
 * (C) Works
   ...
 * (C) Employees
