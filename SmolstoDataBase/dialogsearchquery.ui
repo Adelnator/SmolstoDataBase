@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogSearchQuery</class>
+ <widget class="QDialog" name="DialogSearchQuery">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>249</width>
+    <height>131</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>249</width>
+    <height>131</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>249</width>
+    <height>131</height>
+   </size>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0" colspan="3">
+    <widget class="QComboBox" name="comboBoxColumn">
+     <item>
+      <property name="text">
+       <string>Фамилия</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Имя</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Отчество</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>День рождения</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Телефон</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Почта</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Марка авто</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Модель</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Год выпуска</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Цвет</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>VIN номер</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Гос. номер</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Введите поисковый запрос</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="3">
+    <widget class="QLineEdit" name="lineEditQuery"/>
+   </item>
+   <item row="0" column="0" colspan="3">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Выберите параметр для поиска</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QPushButton" name="pushButtonFind">
+     <property name="text">
+      <string>Найти</string>
+     </property>
+     <property name="shortcut">
+      <string>Return</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>66</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="2">
+    <widget class="QPushButton" name="pushButtonCancel">
+     <property name="text">
+      <string>Отмена</string>
+     </property>
+     <property name="shortcut">
+      <string>Esc</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogSearchQuery</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>185</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>51</x>
+     <y>116</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonFind</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogSearchQuery</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>103</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>59</x>
+     <y>102</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
